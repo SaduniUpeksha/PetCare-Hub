@@ -1,0 +1,154 @@
+/* =========================
+   LOGIN PAGE CSS
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+
+    /* Background image + light blue overlay */
+    background:
+        linear-gradient(rgba(173,230,255,0.6), rgba(173,230,255,0.6)),
+        url('../images/background.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+/* Logo Box */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    background: #0057a8;
+    color: #000;
+
+    padding: 15px 18px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Login Form Box */
+.login-box {
+    width: 330px;
+
+    padding: 35px 30px;
+
+    background: rgba(255,255,255,0.25);
+    border: 2px solid rgba(0,0,0,0.15);
+    border-radius: 15px;
+
+    backdrop-filter: blur(6px);
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Heading */
+.login-box h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 30px;
+
+    font-weight: 800;
+    color: #000;
+}
+
+/* Labels */
+.login-box label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 8px;
+
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input Fields */
+.login-box input {
+    width: 100%;
+    padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.85);
+
+    box-sizing: border-box;
+    outline: none;
+
+    font-size: 14px;
+}
+
+/* Input Focus */
+.login-box input:focus {
+    border: 2px solid #00a6d6;
+    background: #fff;
+}
+
+/* Login Button */
+.login-box button {
+    width: 150px;
+
+    margin: 30px auto 15px;
+    display: block;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #008fc4;
+    color: #fff;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.login-box button:hover {
+    background: #006f9a;
+    transform: scale(1.05);
+}
+
+/* Bottom Text */
+.bottom-text {
+    text-align: center;
+    margin-top: 10px;
+
+    font-size: 14px;
+    color: #333;
+}
+
+/* Register Link */
+.bottom-text a {
+    color: #0057a8;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+
+    .login-box {
+        width: 90%;
+        padding: 25px 20px;
+    }
+
+    .login-box h1 {
+        font-size: 34px;
+    }
+}
