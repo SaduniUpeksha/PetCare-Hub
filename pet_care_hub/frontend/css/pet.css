@@ -1,6 +1,8 @@
 body{
 
-background:#dff6ff;
+background:
+        linear-gradient(rgba(173,230,255,0.6), rgba(173,230,255,0.6)),
+        url('../images/background.jpg');
 
 }
 

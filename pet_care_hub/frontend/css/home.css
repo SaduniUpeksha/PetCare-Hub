@@ -1,6 +1,10 @@
 body{
     font-family: Arial, sans-serif;
-    background:#fffefe;
+    background:
+        linear-gradient(rgba(173,230,255,0.6), rgba(173,230,255,0.6)),
+        url('../images/background.jpg');
+
+    
 }
 
 .navbar{

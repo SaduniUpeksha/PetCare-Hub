@@ -1,19 +1,8 @@
 body{
-
-background:#dff6ff;
-
-font-family:Arial, sans-serif;
-
+    background:
+        linear-gradient(rgba(173,230,255,0.6), rgba(173,230,255,0.6)),
+        url('../images/background.jpg');
 }
-
-h1{
-
-color:#063970;
-
-font-weight:bold;
-
-}
-
 .doctor-card{
     border:none;
     border-radius:20px;
