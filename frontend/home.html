@@ -1,325 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>PetCare Hub</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>PetCare Hub</title>
 
-<link rel="stylesheet" href="css/home.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/common.css">
 
 </head>
 
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow">
 
-<div class="container">
+    <div class="container">
 
-<a class="navbar-brand fw-bold" href="#">
-🐾 PetCare Hub
-</a>
+        <a class="navbar-brand fw-bold"
+           href="home.html">
+            🐾 PetCare Hub
+        </a>
 
-<button class="navbar-toggler"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#menu">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
 
-<span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
 
-</button>
+        </button>
 
-<div class="collapse navbar-collapse" id="menu">
+        <div
+            class="collapse navbar-collapse"
+            id="menu">
 
-<ul class="navbar-nav ms-auto">
+            <ul
+                class="navbar-nav ms-auto align-items-center"
+                id="mainNav">
+            </ul>
 
-<li class="nav-item">
-<a class="nav-link active" href="home.html">Home</a>
-</li>
+        </div>
 
-<li class="nav-item">
-<a class="nav-link" href="pet.html">Pets</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="products.html">Products</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="doctors.html">Doctors</a>
-</li>
-
-
-
-<li class="nav-item ms-3">
-<a class="btn btn-dark rounded-pill px-4"
-href="login.html">
-Login
-</a>
-</li>
-
-</ul>
-
-</div>
-
-</div>
+    </div>
 
 </nav>
 
-<!-- Hero Section -->
+
+<!-- HERO -->
 
 <section class="hero">
 
-<div class="container">
+    <div class="container">
 
-<div class="row align-items-center">
+        <div class="row align-items-center">
 
-<div class="col-lg-6">
+            <div class="col-lg-6">
 
-<h1>Welcome to <br><span>PetCare Hub</span></h1>
+                <h1>
+                    Welcome to
+                    <br>
+                    <span>PetCare Hub</span>
+                </h1>
 
-<p>
-Find your perfect pet, shop quality pet products,
-and book appointments with trusted veterinary doctors.
-</p>
+                <p>
+                    Find your perfect pet, shop quality pet products,
+                    and book appointments with trusted veterinary doctors.
+                </p>
 
-<a href="pet.html" class="btn btn-primary btn-lg">
-See Pets
-</a>
+                <a href="pet.html"
+                   class="btn btn-primary btn-lg">
+                    See Pets
+                </a>
 
-</div>
+            </div>
 
-<div class="col-lg-6 text-center">
+            <div class="col-lg-6 text-center">
+            </div>
 
+        </div>
 
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
- <!-- Featured Pets Section -->
+
+<!-- FEATURED PETS -->
 
 <section class="featured-pets py-5">
 
-  <div class="container">
+    <div class="container">
 
-    <h2 class="text-center mb-5 fw-bold text-info">
-      Featured Pets
-    </h2>
+        <h2 class="text-center mb-5 fw-bold text-info">
+            Featured Pets
+        </h2>
 
-    <div class="row g-4">
+        <!-- RIGHT ALIGNED BUTTON -->
 
-      <!-- Dog -->
-      <div class="col-md-4 col-lg-3">
-        <div class="card pet-card h-100 shadow-sm">
-          <img src="images/dogs/golden retriever.jpg" class="card-img-top" alt="Golden Retriever">
-          <div class="card-body text-center">
-            <h5 class="card-title">Golden Retriever</h5>
-            <p class="text-muted">Friendly • 2 Years</p>
-            <a href="pet.html" class="btn btn-info text-white rounded-pill px-4">
-              View Details
+        <div class="d-flex justify-content-end mt-4 mb-4">
+
+            <a href="pet.html"
+               class="btn btn-primary rounded-pill px-4">
+
+                Explore All Pets
+
             </a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Cat -->
-      <div class="col-md-4 col-lg-3">
-        <div class="card pet-card h-100 shadow-sm">
-          <img src="images/cats/persian cat.jpg" class="card-img-top" alt="Persian Cat">
-          <div class="card-body text-center">
-            <h5 class="card-title">Persian Cat</h5>
-            <p class="text-muted">Beautiful • 1 Year</p>
-            <a href="pet.html" class="btn btn-info text-white rounded-pill px-4">
-              View Details
-            </a>
-          </div>
         </div>
-      </div>
 
-      <!-- Bird -->
-      <div class="col-md-4 col-lg-3">
-        <div class="card pet-card h-100 shadow-sm">
-          <img src="images/birds/parrot.jpg" class="card-img-top" alt="Parrot">
-          <div class="card-body text-center">
-            <h5 class="card-title">Parrot</h5>
-            <p class="text-muted">Colorful • 8 Months</p>
-            <a href="pet.html" class="btn btn-info text-white rounded-pill px-4">
-              View Details
-            </a>
-          </div>
+        <div
+            class="row g-4"
+            id="featuredPetsGrid">
         </div>
-      </div>
-
-      <!-- Rabbit -->
-      <div class="col-md-4 col-lg-3">
-        <div class="card pet-card h-100 shadow-sm">
-          <img src="images/others/rabbit1.jpg" class="card-img-top" alt="Rabbit">
-          <div class="card-body text-center">
-            <h5 class="card-title">White Rabbit</h5>
-            <p class="text-muted">Cute • 6 Months</p>
-            <a href="pet.html" class="btn btn-info text-white rounded-pill px-4">
-              View Details
-            </a>
-          </div>
-        </div>
-      </div>
 
     </div>
-
-  </div>
 
 </section>
 
 
-
-<!-- Featured Products Section -->
+<!-- FEATURED PRODUCTS -->
 
 <section class="featured-products py-5 bg-light">
 
-  <div class="container">
+    <div class="container">
 
-    <h2 class="text-center mb-5 fw-bold text-info">
-      Featured Products
-    </h2>
+        <h2 class="text-center mb-5 fw-bold text-info">
+            Featured Products
+        </h2>
 
-    <div class="row g-4">
+        <!-- RIGHT ALIGNED BUTTON -->
 
-      <!-- Product 1 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card product-card h-100 shadow-sm">
-          <img src="images/pet item/dog_food.jpeg" class="card-img-top" alt="Dog Food">
-          <div class="card-body text-center">
-            <h5 class="card-title">Premium Dog Food</h5>
-            <p class="text-muted">Healthy dry food for adult dogs.</p>
-            <h6 class="text-primary fw-bold mb-3">Rs. 3,500</h6>
-            <a href="products.html" class="btn btn-info text-white rounded-pill px-4">
-              Buy Now
+        <div class="d-flex justify-content-end mt-4 mb-4">
+
+            <a href="products.html"
+               class="btn btn-primary rounded-pill px-4">
+
+                View All Products
+
             </a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Product 2 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card product-card h-100 shadow-sm">
-          <img src="images/pet item/toyes/cat_toys.jpg" class="card-img-top" alt="Cat Toy">
-          <div class="card-body text-center">
-            <h5 class="card-title">Cat Toy Set</h5>
-            <p class="text-muted">Fun toys to keep your cat active.</p>
-            <h6 class="text-primary fw-bold mb-3">Rs. 1,200</h6>
-            <a href="products.html" class="btn btn-info text-white rounded-pill px-4">
-              Buy Now
-            </a>
-          </div>
         </div>
-      </div>
 
-      <!-- Product 3 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card product-card h-100 shadow-sm">
-          <img src="images/pet item/pet_bed..jpg" class="card-img-top" alt="Pet Bed">
-          <div class="card-body text-center">
-            <h5 class="card-title">Luxury Pet Bed</h5>
-            <p class="text-muted">Soft and comfortable sleeping bed.</p>
-            <h6 class="text-primary fw-bold mb-3">Rs. 6,500</h6>
-            <a href="products.html" class="btn btn-info text-white rounded-pill px-4">
-              Buy Now
-            </a>
-          </div>
+        <div
+            class="row g-4"
+            id="featuredProductsGrid">
         </div>
-      </div>
-
-      <!-- Product 4 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card product-card h-100 shadow-sm">
-          <img src="images/pet item/dog_shamppo.jpeg" class="card-img-top" alt="Dog Shampoo">
-          <div class="card-body text-center">
-            <h5 class="card-title">Dog Shampoo</h5>
-            <p class="text-muted">Gentle shampoo for a shiny coat.</p>
-            <h6 class="text-primary fw-bold mb-3">Rs. 950</h6>
-            <a href="products.html" class="btn btn-info text-white rounded-pill px-4">
-              Buy Now
-            </a>
-          </div>
-        </div>
-      </div>
 
     </div>
-
-  </div>
 
 </section>
 
-<!-- Footer Section -->
+
+<!-- FOOTER -->
 
 <footer class="footer-section pt-5 pb-3">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="row g-4">
+        <div class="row g-4">
 
-      <!-- About -->
-      <div class="col-lg-4 col-md-6">
-        <h4 class="text-white fw-bold mb-3">🐾 PetCare Hub</h4>
-        <p class="text-light">
-          Your trusted place to find lovely pets, quality pet products,
-          and professional veterinary services.
-        </p>
-      </div>
+            <div class="col-lg-4 col-md-6">
 
-      <!-- Quick Links -->
-      <div class="col-lg-4 col-md-6">
-        <h5 class="text-white fw-bold mb-3">Quick Links</h5>
-        <ul class="list-unstyled footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pets.html">Pets</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="doctors.html">Doctors</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
+                <h4 class="text-white fw-bold mb-3">
+                    🐾 PetCare Hub
+                </h4>
 
-      <!-- Contact Info -->
-      <div class="col-lg-4 col-md-12">
-        <h5 class="text-white fw-bold mb-3">Contact Info</h5>
+                <p class="text-light">
+                    Your trusted place to find lovely pets,
+                    quality pet products, and professional
+                    veterinary services.
+                </p>
 
-        <p class="text-light mb-2"> Anuradhapura, Sri Lanka</p>
-        <p class="text-light mb-2"> +94 77 123 4567</p>
-        <p class="text-light mb-3"> info@petcarehub.com</p>
+            </div>
 
-        <div class="social-icons">
-          <a href="#" class="social-icon"></a>
-          <a href="#" class="social-icon"></a>
-          <a href="#" class="social-icon"></a>
-          <a href="#" class="social-icon"></a>
+
+            <div class="col-lg-4 col-md-6">
+
+                <h5 class="text-white fw-bold mb-3">
+                    Quick Links
+                </h5>
+
+                <ul class="list-unstyled footer-links">
+
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="pet.html">Pets</a>
+                    </li>
+
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="doctors.html">Doctors</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-12">
+
+                <h5 class="text-white fw-bold mb-3">
+                    Contact Info
+                </h5>
+
+                <p class="text-light mb-2">
+                    Anuradhapura, Sri Lanka
+                </p>
+
+                <p class="text-light mb-2">
+                    +94 77 123 4567
+                </p>
+
+                <p class="text-light mb-3">
+                    info@petcarehub.com
+                </p>
+
+            </div>
+
         </div>
-      </div>
+
+
+        <hr class="border-light my-4">
+
+        <div class="text-center">
+
+            <p class="text-light mb-0">
+
+                © 2026 <strong>PetCare Hub</strong> |
+                All Rights Reserved
+
+            </p>
+
+        </div>
 
     </div>
-
-    <hr class="border-light my-4">
-
-    <div class="text-center">
-      <p class="text-light mb-0">
-        © 2026 <strong>PetCare Hub</strong> | All Rights Reserved
-      </p>
-    </div>
-
-  </div>
 
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
 <script src="js/script.js"></script>
 
 </body>
+
 </html>

@@ -1,48 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - PetCare Hub</title>
 
-    <!-- Correct CSS file -->
-    <link rel="stylesheet" href="css/login.css">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Login - PetCare Hub</title>
+
+<link rel="stylesheet"href="css/login.css">
+
+
 </head>
 
 <body>
 
-    <!-- Logo -->
-    
-    <a class="logo" href="home.html">
-🐾 PetCare Hub
+<a class="logo">
+    🐾 PetCare Hub
 </a>
 
 
-    <!-- Login Box -->
-    <div class="login-box">
+<div class="login-box">
 
-        <h1>Login</h1>
+    <h1>Login</h1>
 
-        <form>
 
-            <label>Username :</label>
-            <input type="text" placeholder="Enter username" required>
+    <form
+        action="../backend/auth/login.php"
+        method="POST">
 
-            <label>Password :</label>
-            <input type="password" placeholder="Enter password" required>
+        <label>
+            Username :
+        </label>
 
-            <button type="submit">Login</button>
+        <input
+            type="text"
+            name="username"
+            placeholder="Enter username"
+            required>
 
-        </form>
 
-        <p class="bottom-text">
-            Don’t have an account?
-            <a href="register.html">Register Here</a>
-        </p>
+        <label>
+            Password :
+        </label>
 
-    </div>
+        <input
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            required>
 
-    <script src="js/script.js"></script>
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+
+    <p class="bottom-text">
+
+        Don't have an account?
+
+        <a href="register.html">
+            Register Here
+        </a>
+
+    </p>
+
+</div>
+
+
+<script src="js/script.js"></script>
 
 </body>
+
 </html>

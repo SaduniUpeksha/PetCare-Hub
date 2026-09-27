@@ -1,38 +1,41 @@
-body{
-    background:
-        linear-gradient(rgba(173,230,255,0.6), rgba(173,230,255,0.6)),
-        url('../images/background.jpg');
-}
-.doctor-card{
-    border:none;
-    border-radius:20px;
-    background:rgba(255,255,255,0.85);
-    transition:0.3s;
+body {
+    font-family: Arial, sans-serif;
 }
 
-.doctor-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 12px 25px rgba(0,0,0,.2);
+
+/* Doctor Card */
+
+.doctor-card {
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    transition: 0.3s;
 }
 
-.doctor-img{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-    object-fit:cover;
+.doctor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-.doctor-card h4{
-    font-size:22px;
-    font-weight:bold;
-    color:#0d6efd;
+.doctor-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto 0;
 }
 
-.doctor-card p{
-    margin-bottom:6px;
+.doctor-card h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0d6efd;
 }
 
-.doctor-card .btn{
-    border-radius:25px;
-    padding:8px 20px;
+.doctor-card p {
+    margin-bottom: 6px;
+}
+
+.doctor-card .btn {
+    border-radius: 25px;
+    padding: 8px 20px;
 }
