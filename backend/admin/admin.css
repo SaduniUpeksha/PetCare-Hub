@@ -1,0 +1,570 @@
+/* =========================================
+   PETCARE HUB - ADMIN COMMON THEME
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #19324a;
+
+    background:
+        linear-gradient(
+            rgba(173, 230, 255, 0.60),
+            rgba(173, 230, 255, 0.60)
+        ),
+        url("../../frontend/images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 260px;
+    height: 100vh;
+
+    padding: 24px 14px;
+
+    background: rgba(8, 102, 132, 0.97);
+
+    color: white;
+
+    box-shadow: 4px 0 18px rgba(0, 0, 0, 0.14);
+
+    overflow-y: auto;
+
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.sidebar h3 {
+    margin: 0 0 28px 0;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* All sidebar links */
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 48px;
+
+    padding: 12px 16px;
+
+    margin-bottom: 7px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* Hover */
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.16);
+
+    color: white;
+
+    transform: translateX(2px);
+}
+
+
+/* Active page */
+
+.sidebar a.active {
+    background: white;
+
+    color: #087b9f;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Logout */
+
+.sidebar a.logout {
+    margin-top: 22px;
+
+    justify-content: center;
+
+    background: #dc5c50;
+
+    color: white;
+}
+
+.sidebar a.logout:hover {
+    background: #c94d43;
+
+    color: white;
+
+    transform: none;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.main {
+    margin-left: 260px;
+
+    min-height: 100vh;
+
+    padding: 38px;
+}
+
+
+/* Page title */
+
+.page-title {
+    margin: 0 0 28px 0;
+
+    color: #075f83;
+
+    font-size: 34px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CONTENT BOX
+========================================= */
+
+.box {
+    background: rgba(255, 255, 255, 0.95);
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 28px rgba(8, 102, 132, 0.10);
+}
+
+.box h2 {
+    margin: 0 0 20px 0;
+
+    color: #075f83;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   DASHBOARD CARDS
+========================================= */
+
+.stat-card {
+    border: none;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    box-shadow:
+        0 8px 24px rgba(8, 102, 132, 0.10);
+
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+}
+
+.stat-card h5 {
+    margin-bottom: 10px;
+
+    color: #39566c;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.number {
+    color: #0b8db3;
+
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   FORMS
+========================================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field.full {
+    grid-column: 1 / -1;
+}
+
+label {
+    margin-bottom: 7px;
+
+    color: #25445b;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 11px 13px;
+
+    border: 1px solid #b8dce9;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    color: #19324a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #0b9bc2;
+
+    box-shadow:
+        0 0 0 3px rgba(11, 155, 194, 0.13);
+}
+
+textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+button,
+.edit-btn,
+.delete-btn,
+.cancel-btn,
+.admin-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 40px;
+
+    padding: 9px 15px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* Main button */
+
+button,
+.admin-btn {
+    background: #0b8db3;
+
+    color: white;
+}
+
+button:hover,
+.admin-btn:hover {
+    background: #087798;
+
+    color: white;
+
+    transform: translateY(-1px);
+}
+
+
+/* Edit */
+
+.edit-btn {
+    background: #0b8db3;
+
+    color: white;
+
+    margin-right: 5px;
+}
+
+.edit-btn:hover {
+    background: #087798;
+
+    color: white;
+
+    transform: translateY(-1px);
+}
+
+
+/* Delete */
+
+.delete-btn {
+    background: #dc5c50;
+
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c94d43;
+
+    color: white;
+
+    transform: translateY(-1px);
+}
+
+
+/* Cancel */
+
+.cancel-btn {
+    background: #7b8790;
+
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #66727b;
+
+    color: white;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.message {
+    padding: 13px 16px;
+
+    margin-bottom: 20px;
+
+    border-left: 5px solid #0b8db3;
+
+    border-radius: 9px;
+
+    background: #e0f7fb;
+
+    color: #08647f;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   TABLES
+========================================= */
+
+.table-wrap {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+}
+
+th,
+td {
+    padding: 12px 13px;
+
+    border-bottom: 1px solid #dce8ed;
+
+    text-align: left;
+
+    vertical-align: middle;
+
+    font-size: 14px;
+}
+
+th {
+    background: #0b8db3;
+
+    color: white;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+tbody tr:hover {
+    background: #f3fbfd;
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.empty {
+    padding: 25px;
+
+    text-align: center;
+
+    color: #607786;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   APPOINTMENT STATUS
+========================================= */
+
+.status-select {
+    min-width: 130px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        min-height: auto;
+
+        padding: 18px 14px;
+
+        overflow: visible;
+    }
+
+    .sidebar h3 {
+        margin-bottom: 18px;
+    }
+
+    .sidebar a {
+        min-height: 44px;
+
+        padding: 11px 14px;
+    }
+
+    .main {
+        margin-left: 0;
+
+        padding: 25px 18px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .field.full {
+        grid-column: auto;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    .table-wrap {
+        overflow-x: auto;
+    }
+}
